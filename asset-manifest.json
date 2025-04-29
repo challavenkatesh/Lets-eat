@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Letseat-frontend/static/css/main.df433f99.css",
-    "main.js": "/Letseat-frontend/static/js/main.604586e2.js",
+    "main.js": "/Letseat-frontend/static/js/main.a45da408.js",
     "static/media/logo-1.png": "/Letseat-frontend/static/media/logo-1.e7860f33c713b15a2031.png",
     "index.html": "/Letseat-frontend/index.html",
     "main.df433f99.css.map": "/Letseat-frontend/static/css/main.df433f99.css.map",
-    "main.604586e2.js.map": "/Letseat-frontend/static/js/main.604586e2.js.map"
+    "main.a45da408.js.map": "/Letseat-frontend/static/js/main.a45da408.js.map"
   },
   "entrypoints": [
     "static/css/main.df433f99.css",
-    "static/js/main.604586e2.js"
+    "static/js/main.a45da408.js"
   ]
 }
