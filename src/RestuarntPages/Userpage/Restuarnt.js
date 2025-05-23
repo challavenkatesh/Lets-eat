@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import logo from "./logo-1.png"
 import {
   FaMapMarkerAlt,
   FaUtensils,
@@ -72,7 +73,7 @@ const RestaurantDisplay = () => {
       {/* Navbar */}
       <nav className="flex justify-between items-center bg-white p-4 h-16 shadow-lg">
         <h1 className="text-2xl font-bold text-black flex items-center">
-          <img src="logo-1.png" alt="Logo" className="h-16 w-auto" />
+          <img src={logo} alt="Logo" className="h-20 w-auto" />
         </h1>
 
         <div className="hidden md:flex items-center space-x-4">

@@ -268,7 +268,7 @@ const Navbar = () => {
     { icon: <FileBarChart2 size={32} />, label: "Reports", value: "8", color: "from-purple-400 to-purple-600" },
   ];
 
-  const pages = ["dashboard", "users", "restaurants", "support", "events", "reports", "feedback"];
+  const pages = ["dashboard", "users", "restaurants", "support", "reports", "feedback"];
   const usersData = [
     {
       name: "Alice Johnson",
@@ -895,62 +895,7 @@ const Navbar = () => {
     </motion.div>
     
             </h2>}
-          {activePage === "events" && <h2 className="text-2xl font-semibold text-center animate-fade-in">
-            <motion.div
-  className="p-6 font-serif bg-gradient-to-br from-white to-red-50 rounded-3xl shadow-lg"
-  initial={{ opacity: 0, y: 30 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.6 }}
->
-  <h2 className="text-2xl font-bold text-red-700 mb-5 flex items-center gap-3">
-    <img
-      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjZeBcuCj5lQ8UfeqWewLBFPyNvPV4PucQ_g&s"
-      alt="Event Icon"
-      className="w-7 h-7 rounded-full object-cover border border-red-300 shadow"
-    />
-    Events Monitoring
-  </h2>
-
-  <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-    {events.map((event) => (
-      <motion.div
-        key={event.id}
-        className="bg-white border border-red-100 text-gray-800 shadow-md rounded-2xl p-4 transition-all hover:shadow-xl hover:scale-[1.015] hover:-translate-y-[2px]"
-        whileHover={{ scale: 1.02 }}
-      >
-        <h3 className=" text-sm font-semibold text-red-600 mb-2">{event.name}</h3>
-        <div className="text-left">
-        <p className="text-sm text-gray-600 mb-1 ">📅 <strong>Date:</strong> {event.date}</p>
-        <p className="text-sm text-gray-600 mb-1">📍 <strong>Location:</strong> {event.location}</p>
-        <p className="text-sm text-gray-600 mb-1">👨‍🍳 <strong>Conducted by:</strong> {event.restaurantName}</p>
-        <p className="text-sm text-gray-600 mb-3">🏠 <strong>Restaurant Location:</strong> {event.restaurantLocation}</p>
-        </div>
-        <div className="flex justify-between items-center mt-3">
-          <span
-            className={`text-xs font-medium px-3 py-1 rounded-full shadow-sm ${getStatuColor(event.status)}`}
-          >
-            {event.status}
-          </span>
-          <span className="text-xs text-green-700 flex items-center gap-1">
-            <User className="w-3.5 h-3.5" />
-            {event.contact}
-          </span>
-        </div>
-
-        <div className="mt-3 flex justify-between text-xs text-gray-500">
-          <div className="flex items-center gap-1">
-            👥 <span className="font-medium">Attendees:</span> {event.attendees}
-          </div>
-          <div className="flex items-center gap-1">
-            ✅ <span className="font-medium">Joining:</span> {event.joining}
-          </div>
-        </div>
-      </motion.div>
-    ))}
-  </div>
-</motion.div>
-
-            </h2>}
+          
           {activePage === "reports" && <h2 className="text-2xl font-semibold text-center animate-fade-in">
             <motion.div
       className="p-6 font-serif"

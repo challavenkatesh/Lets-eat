@@ -68,7 +68,7 @@ function Navbar() {
                 <div className="flex justify-between items-center h-16">
                     {/* Logo */}
                     <div className="flex items-center space-x-2">
-                        <img src={logo} alt="Logo" className="h-20 w-auto rounded-md" />
+                        <img src={logo} alt="Logo" className="h-20 ml-0 w-auto rounded-md" />
                     </div>
 
                     {/* Desktop Menu */}
@@ -116,10 +116,7 @@ function Navbar() {
                             )}
                         </div>
 
-                        <Link to="/events" className="relative font-serif text-black hover:text-red-500 group">
-                            Events
-                            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
-                        </Link>
+                      
                         <Link to="/takeaway" className="relative font-serif text-black hover:text-red-500 group">
                             Takeaway
                             <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
@@ -137,12 +134,6 @@ function Navbar() {
       {/* Dropdown Menu */}
       {isOpen && (
         <div className="absolute left-0 mt-2 w-40 bg-white shadow-lg border rounded-lg">
-          <Link
-            to="/book-event"
-            className="block px-4 py-2 text-gray-700 hover:bg-red-500 hover:text-white"
-          >
-            Book Event
-          </Link>
           <Link
             to="/book-table"
             className="block px-4 py-2 text-gray-700 hover:bg-red-500 hover:text-white"

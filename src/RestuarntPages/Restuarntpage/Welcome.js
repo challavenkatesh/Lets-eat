@@ -141,9 +141,7 @@ const DashboardStats = () => {
     <Link to="/addbookings" onClick={() => setMobileMenuOpen(false)} className="flex items-center gap-2 hover:text-red-600">
       <FaCalendarAlt /> Bookings
     </Link>
-    <Link to="/user-events" onClick={() => setMobileMenuOpen(false)} className="flex items-center gap-2 hover:text-red-600">
-      <FaConciergeBell /> Events
-    </Link>
+   
     <Link to="/restuarntorder" onClick={() => setMobileMenuOpen(false)} className="flex items-center gap-2 hover:text-red-600">
       <FaUtensils /> Add Menu
     </Link>

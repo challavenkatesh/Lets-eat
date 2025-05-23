@@ -119,7 +119,7 @@ const deals = [
         <div className="container mx-auto flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center">
-            <img src={logo} alt="Logo" className="h-20 w-auto" />
+            <img src={logo} alt="Logo" className="h-20  w-auto" />
           </div>
 
           {/* Centered Navigation Links */}
@@ -127,7 +127,6 @@ const deals = [
             <Link to="/userpage" className="text-black font-serif hover:text-red-600">Home</Link>
             <Link to="/restaurants" className="text-black font-serif hover:text-red-600">Restaurants</Link>
             <Link to="/bookings" className="text-black font-serif hover:text-red-600">Bookings</Link>
-            <Link to="/events-list" className="text-black font-serif hover:text-red-600">Events</Link>
             <Link to="/order" className="text-black font-serif hover:text-red-600">Order</Link>
           </div>
 
