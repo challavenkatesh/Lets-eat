@@ -9,7 +9,6 @@ import {
   FaHome,
   FaPlus,
   FaCalendarAlt,
-  FaConciergeBell,
   FaEnvelope,
   FaUserCircle,
   FaBars,

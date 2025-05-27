@@ -32,44 +32,6 @@ import "react-calendar/dist/Calendar.css";
 import "./CustomCalendar.css"; 
 import { motion } from "framer-motion";
 import Calendar from "react-calendar";
-const events = [
-  {
-    id: 1,
-    name: "Food Festival 2025",
-    date: "2025-06-25",
-    location: "Los Angeles, CA",
-    status: "Scheduled",
-    contact: "event1@example.com",
-    attendees: 500,
-    joining: 200,
-    restaurantName: "The Gourmet Hub",
-    restaurantLocation: "Los Angeles, CA",
-  },
-  {
-    id: 2,
-    name: "Gourmet Night",
-    date: "2025-07-10",
-    location: "New York, NY",
-    status: "In Progress",
-    contact: "event2@example.com",
-    attendees: 300,
-    joining: 150,
-    restaurantName: "Delicious Bites",
-    restaurantLocation: "New York, NY",
-  },
-  {
-    id: 3,
-    name: "Grand Opening",
-    date: "2025-08-15",
-    location: "San Francisco, CA",
-    status: "Completed",
-    contact: "event3@example.com",
-    attendees: 700,
-    joining: 350,
-    restaurantName: "Opening Feast",
-    restaurantLocation: "San Francisco, CA",
-  },
-];
 
 
 const restaurantRatings = [
@@ -81,18 +43,6 @@ const restaurantRatings = [
 
 
 
-const getStatuColor = (status) => {
-  switch (status) {
-    case "Scheduled":
-      return "bg-blue-100 text-blue-600";
-    case "In Progress":
-      return "bg-yellow-100 text-yellow-600";
-    case "Completed":
-      return "bg-green-100 text-green-600";
-    default:
-      return "bg-gray-100 text-gray-600";
-  }
-};
 const restaurantData = [
   {
     name: "The Royal Feast",
@@ -136,29 +86,6 @@ const bookingData = [
   { month: "Jun", bookings: 50 },
 ];
 
-const issues = [
-  {
-    id: 1,
-    title: "Unable to login",
-    description: "The user is experiencing login issues despite entering correct credentials.",
-    status: "Open",
-    contact: "user1@example.com",
-  },
-  {
-    id: 2,
-    title: "Payment not processed",
-    description: "Customer made the payment but the booking wasn't confirmed.",
-    status: "In Progress",
-    contact: "user2@example.com",
-  },
-  {
-    id: 3,
-    title: "Restaurant not showing",
-    description: "A registered restaurant is not visible on the explore page.",
-    status: "Resolved",
-    contact: "user3@example.com",
-  },
-];
 
 const getStatusColor = (status) => {
   switch (status) {
@@ -308,29 +235,6 @@ const Navbar = () => {
     },
   ];
   
-  const initialIssues = [
-    {
-      id: 1,
-      title: "Unable to login",
-      description: "The user is experiencing login issues despite entering correct credentials.",
-      status: "Open",
-      contact: "user1@example.com",
-    },
-    {
-      id: 2,
-      title: "Payment not processed",
-      description: "Customer made the payment but the booking wasn't confirmed.",
-      status: "In Progress",
-      contact: "user2@example.com",
-    },
-    {
-      id: 3,
-      title: "Restaurant not showing",
-      description: "A registered restaurant is not visible on the explore page.",
-      status: "Resolved",
-      contact: "user3@example.com",
-    },
-  ];
   
   const [issues, setIssues] = useState([]);
   const [selectedIssue, setSelectedIssue] = useState(null);
