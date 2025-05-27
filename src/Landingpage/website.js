@@ -337,78 +337,7 @@ function Navbar() {
         </motion.button>
       </div>
     </section>
-    <section className="w-full bg-gray-100 py-12">
-      <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-8 text-red-600">
-          Upcoming Events
-        </h2>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {/* Event 1 */}
-          <div className="bg-white shadow-lg rounded-lg overflow-hidden">
-            <img
-              src="https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg?auto=compress&cs=tinysrgb&w=600"
-              alt="Jazz Night"
-              className="w-full h-56 object-cover"
-            />
-            <div className="p-6">
-              <h3 className="text-2xl font-semibold text-gray-800">
-                Live Jazz Night
-              </h3>
-              <p className="text-gray-600 mt-2">March 25, 2025</p>
-              <p className="text-gray-700 mt-4">
-                Enjoy live jazz music with a special dinner menu!
-              </p>
-              <button className="mt-4 w-full bg-red-600 text-white py-2 rounded-lg hover:bg-red-700 transition "  onClick={() => navigate("/register-to-dine")}>
-                Book Event
-              </button>
-            </div>
-          </div>
-
-          {/* Event 2 */}
-          <div className="bg-white shadow-lg rounded-lg overflow-hidden" >
-            <img
-              src="https://images.pexels.com/photos/6287555/pexels-photo-6287555.jpeg?auto=compress&cs=tinysrgb&w=600"
-              alt="Italian Festival"
-              className="w-full h-56 object-cover"
-            />
-            <div className="p-6">
-              <h3 className="text-2xl font-semibold text-gray-800">
-                Italian Food Festival
-              </h3>
-              <p className="text-gray-600 mt-2">April 5, 2025</p>
-              <p className="text-gray-700 mt-4">
-                Taste authentic Italian dishes with a 20% discount!
-              </p>
-              <button className="mt-4 w-full bg-red-600 text-white py-2 rounded-lg hover:bg-red-700 transition" onClick={() => navigate("/register-to-dine")}>
-                Book Event
-              </button>
-            </div>
-          </div>
-
-          {/* Event 3 */}
-          <div className="bg-white shadow-lg rounded-lg overflow-hidden" >
-            <img
-              src="https://images.pexels.com/photos/7930114/pexels-photo-7930114.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              alt="Wine Tasting"
-              className="w-full h-56 object-cover"
-            />
-            <div className="p-6">
-              <h3 className="text-2xl font-semibold text-gray-800">
-                Wine Tasting Evening
-              </h3>
-              <p className="text-gray-600 mt-2">April 15, 2025</p>
-              <p className="text-gray-700 mt-4">
-                Explore the best wines with our sommelier.
-              </p>
-              <button className="mt-4 w-full bg-red-600 text-white py-2 rounded-lg hover:bg-red-700 transition"  onClick={() => navigate("/register-to-dine")}>
-                Book Event
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+   
     <section id="why-choose-us" className="py-16 bg-white">
       <div className="max-w-6xl mx-auto px-6">
         {/* Section Title */}
